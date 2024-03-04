@@ -1,8 +1,8 @@
 {
-  "name": "@bejutassle/react-native-recaptcha",
+  "name": "@bejutassle/react-native-captcha-provider",
   "version": "1.0.0",
   "private": false,
-  "description": "React Native Google Recaptcha V3",
+  "description": "React Native Captcha Providers. Google Recaptcha v1, v2, v3 - Cloudflare Turnstile",
   "main": "/src/index.tsx",
   "types": "/src/index.tsx",
   "scripts": {
@@ -13,17 +13,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bejutassle/react-native-recaptcha.git"
+    "url": "git+https://github.com/bejutassle/react-native-captcha-provider.git"
   },
   "author": "Emre Emir <emre@emreemir.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bejutassle/react-native-recaptcha/issues"
+    "url": "https://github.com/bejutassle/react-native-captcha-provider/issues"
   },
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/bejutassle/react-native-recaptcha#readme",
+  "homepage": "https://github.com/bejutassle/react-native-captcha-provider#readme",
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/plugin-transform-runtime": "^7.19.6",
@@ -72,6 +72,8 @@
     "react",
     "native",
     "recaptcha",
+    "v1",
+    "v2",
     "v3"
   ],
   "dependencies": {
