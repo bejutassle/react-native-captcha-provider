@@ -1,6 +1,6 @@
 {
   "name": "@bejutassle/react-native-captcha-provider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "React Native Captcha Providers. Google Recaptcha v1, v2, v3 - Cloudflare Turnstile",
   "main": "/src/index.tsx",
@@ -11,7 +11,10 @@
     "compile": "npm run build",
     "test": "jest"
   },
-  "repository": "git+https://github.com/bejutassle/react-native-captcha-provider.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bejutassle/react-native-captcha-provider.git"
+  },
   "author": "Emre Emir <emre@emreemir.com>",
   "license": "MIT",
   "bugs": {
