@@ -1,6 +1,6 @@
 {
   "name": "@bejutassle/react-native-recaptcha",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "private": false,
   "description": "React Native Google Recaptcha V3",
   "main": "/src/index.tsx",
@@ -11,7 +11,10 @@
     "compile": "npm run build",
     "test": "jest"
   },
-  "repository": "git+https://github.com/bejutassle/react-native-recaptcha.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bejutassle/react-native-recaptcha.git"
+  },
   "author": "Emre Emir <emre@emreemir.com>",
   "license": "MIT",
   "bugs": {
