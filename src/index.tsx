@@ -1,8 +1,10 @@
-import React, {
+import * as React from "react";
+import {
   forwardRef,
   useRef,
   useImperativeHandle,
   useCallback,
+  useMemo,
 } from "react";
 import { View, StyleSheet, Platform } from "react-native";
 import { WebView } from "react-native-webview";
@@ -14,7 +16,11 @@ const Captcha = forwardRef<CaptchaFCRefProps, CaptchaFCProps>((props, ref) => {
 
   const injectedJavaScript = `(${String(function () {
     var initializePostMessage = window.postMessage;
-    var updatePostMessage = function (message, targetOrigin, transfer) {
+    var updatePostMessage = function (
+      message: any,
+      targetOrigin: any,
+      transfer: any
+    ) {
       initializePostMessage(message, targetOrigin, transfer);
     };
     initializePostMessage.toString = function () {
@@ -66,11 +72,11 @@ const Captcha = forwardRef<CaptchaFCRefProps, CaptchaFCProps>((props, ref) => {
       `;
   };
 
-  const html = React.useMemo(() => {
+  const html = useMemo(() => {
     return getReadyScripts(siteKey, action, lang);
   }, [action, siteKey, lang]);
 
-  const source = React.useMemo(
+  const source = useMemo(
     () => ({
       html,
       baseUrl,
